@@ -17,30 +17,28 @@ const config: Configuration = {
             },
         ],
     },
-    externals: {
-        axios: "axios",
-        "@trim21/gm-fetch": "GM_fetch",
-    },
     optimization: {
         minimize: false,
-        minimizer: [new TerserPlugin({
-            // minify: TerserPlugin.swcMinify,
-            terserOptions: {
-                format: {
-                    comments: false,
+        minimizer: [
+            new TerserPlugin({
+                // minify: TerserPlugin.swcMinify,
+                terserOptions: {
+                    format: {
+                        comments: false,
+                    },
+                    compress: false,
+                    mangle: false,
                 },
-                compress: false,
-                mangle: false,
-            },
-            extractComments: false,
-        })],
+                extractComments: false,
+            }),
+        ],
     },
     plugins: [
         new BannerPlugin({
             banner: generateHeader,
             raw: true,
-        })
-    ]
+        }),
+    ],
 };
 
 export default config;
