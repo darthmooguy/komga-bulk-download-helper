@@ -23,7 +23,8 @@
     "typedoc",
     "untracked",
     "komga",
-    "userscript"
+    "userscript",
+    "readlists"
   ],
   "flagWords": [],
   "ignorePaths": [

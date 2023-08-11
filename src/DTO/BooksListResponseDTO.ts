@@ -1,6 +1,6 @@
 import { BookDTO } from "./BookDTO";
 
-export type BooksInSeriesResponseDTO = {
+export type BooksListResponseDTO = {
     totalPages: number;
     content: BookDTO[];
-}
+};

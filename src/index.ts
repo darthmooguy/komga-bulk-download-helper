@@ -1,3 +1,4 @@
+import ReadListHelper from "./utils/ReadListHelper";
 import SeriesHelper from "./utils/SeriesHelper";
 
 function onPageChange() {
@@ -5,7 +6,9 @@ function onPageChange() {
         SeriesHelper.addDownloadButton();
     }
 
-    // TODO: Support read lists
+    if (ReadListHelper.readListRegex.test(location.pathname)) {
+        ReadListHelper.addDownloadButton();
+    }
 }
 
 (function () {

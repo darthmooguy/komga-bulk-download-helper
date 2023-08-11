@@ -12,9 +12,9 @@
   "author": "darthmooguy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pboymt/userscript-typescript-template/issues"
+    "url": "https://github.com/darthmooguy/komga-bulk-download-helper/issues"
   },
-  "homepage": "https://github.com/pboymt/userscript-typescript-template#readme",
+  "homepage": "https://github.com/darthmooguy/komga-bulk-download-helper#readme",
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@types/prettier": "^2.7.0",
@@ -31,14 +31,15 @@
   },
   "userscript": {
     "require-template": "https://cdn.jsdelivr.net/npm/${dependencyName}@${dependencyVersion}",
-    "namespace": "http://tampermonkey.net/",
+    "namespace": "https://github.com/darthmooguy/komga-bulk-download-helper",
     "license": "https://opensource.org/licenses/MIT",
     "include": [
       "http://localhost:25600/*",
       "https://localhost:8080/*"
     ],
     "require": [],
-    "grant": [],
+    "grant": ["none"],
+    "run-at": "document-end",
     "exclude": [],
     "resources": []
   },
