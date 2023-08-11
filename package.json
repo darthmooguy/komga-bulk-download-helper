@@ -34,8 +34,7 @@
     "namespace": "https://github.com/darthmooguy/komga-bulk-download-helper",
     "license": "https://opensource.org/licenses/MIT",
     "include": [
-      "http://localhost:25600/*",
-      "https://localhost:8080/*"
+      "http://localhost:25600/*"
     ],
     "require": [],
     "grant": ["none"],
