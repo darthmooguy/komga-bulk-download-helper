@@ -19,10 +19,12 @@ const ReadListHelper = {
 
             clearInterval(renderInterval);
 
+            document.getElementById("book-links")?.remove();
+
             const buttonTitle = "Download book links";
             const isDarkTheme = readListDownloadButton.classList.contains("theme--dark");
             const booksDownloadButton = htmlToElement(
-                `<button href="" class="v-btn v-btn--is-elevated v-btn--has-bg ${
+                `<button id="book-links" class="v-btn v-btn--is-elevated v-btn--has-bg ${
                     isDarkTheme ? "theme--dark" : "theme--light"
                 } v-size--small" title="${buttonTitle}" style="margin-left: 20px"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--left mdi mdi-file-download ${
                     isDarkTheme ? "theme--dark" : "theme--light"

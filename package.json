@@ -1,6 +1,6 @@
 {
   "name": "komga-bulk-download-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A userscript to help with bulk downloading from a Komga server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
